@@ -1,0 +1,417 @@
+/* ── Dashboard shared layout ── */
+.dash-page {
+  display: flex;
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+}
+
+.dash-sidebar {
+  width: 232px;
+  min-width: 232px;
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  padding: 24px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.dash-logo {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  padding: 4px 10px;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+.dash-nav-btn {
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  padding: 11px 14px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.15s;
+  width: 100%;
+  font-family: inherit;
+}
+
+.dash-nav-btn:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.dash-nav-btn.active {
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.dash-logout-btn {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  padding: 11px 14px;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: auto;
+  width: 100%;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.dash-logout-btn:hover {
+  background: #fef2f2;
+}
+
+.dash-main {
+  flex: 1;
+  padding: 44px 48px;
+  min-width: 0;
+}
+
+.dash-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.dash-subtitle {
+  color: #6b7280;
+  margin-top: 6px;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.dash-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.dash-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* ── Job cards ── */
+.job-card {
+  border: 1px solid #f3f4f6;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 14px;
+  transition:
+    box-shadow 0.15s,
+    border-color 0.15s;
+}
+
+.job-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-color: #e0e7ff;
+}
+
+.job-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.job-card-desc {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.job-tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.job-tag.blue {
+  background: #eff6ff;
+  color: #2563eb;
+}
+.job-tag.green {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+.job-tag.amber {
+  background: #fffbeb;
+  color: #d97706;
+}
+.job-tag.purple {
+  background: #faf5ff;
+  color: #7c3aed;
+}
+
+.apply-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: inherit;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.apply-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Interview card */
+.interview-card {
+  border: 1px solid #e0e7ff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 14px;
+  background: #fafbff;
+}
+
+.interview-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.interview-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 14px;
+}
+
+.start-interview-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: inherit;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.start-interview-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #9ca3af;
+}
+
+.empty-state-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+/* ── Upload modal ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  width: 420px;
+  max-width: calc(100vw - 32px);
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+}
+
+.modal h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.modal-sub {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.file-input-wrap {
+  border: 2px dashed #d1d5db;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.file-input-wrap:hover {
+  border-color: #2563eb;
+  background: #f8faff;
+}
+
+.file-input-wrap input[type="file"] {
+  display: none;
+}
+
+.file-input-label {
+  cursor: pointer;
+  display: block;
+}
+
+.file-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.file-hint {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.file-selected {
+  font-size: 13px;
+  color: #2563eb;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.modal-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-submit-btn {
+  flex: 1;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.modal-submit-btn:hover {
+  background: #1d4ed8;
+}
+.modal-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.modal-cancel-btn {
+  border: 1.5px solid #e5e7eb;
+  background: white;
+  color: #374151;
+  padding: 13px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.modal-cancel-btn:hover {
+  background: #f9fafb;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .dash-page {
+    flex-direction: column;
+  }
+
+  .dash-sidebar {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    position: static;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 12px;
+    gap: 6px;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .dash-logo {
+    margin-bottom: 0;
+    margin-right: 4px;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .dash-nav-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 9px 12px;
+  }
+
+  .dash-logout-btn {
+    margin-top: 0;
+    margin-left: auto;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .dash-main {
+    padding: 20px 16px;
+  }
+  .dash-heading {
+    font-size: 22px;
+  }
+}

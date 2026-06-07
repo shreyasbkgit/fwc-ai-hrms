@@ -1,0 +1,212 @@
+.interview-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: "Inter", sans-serif;
+  padding: 40px 24px;
+}
+
+.interview-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Header */
+.interview-header {
+  background: white;
+  border-radius: 20px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.interview-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.interview-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+/* Progress bar */
+.progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-track {
+  flex: 1;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+.progress-label {
+  font-size: 13px;
+  color: #6b7280;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* Question cards */
+.question-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px 32px;
+  margin-bottom: 16px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.question-number {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.answer-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  background: #f9fafb;
+  color: #111827;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+  box-sizing: border-box;
+}
+
+.answer-textarea:focus {
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.answer-textarea::placeholder {
+  color: #c4cacf;
+}
+
+/* Submit section */
+.submit-section {
+  background: white;
+  border-radius: 20px;
+  padding: 24px 32px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.05),
+    0 4px 16px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.submit-note {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.submit-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px 32px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s,
+    transform 0.1s;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+
+.submit-btn:active {
+  transform: scale(0.99);
+}
+
+/* Loading state */
+.interview-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .interview-page {
+    padding: 16px;
+  }
+
+  .interview-header,
+  .question-card,
+  .submit-section {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .interview-header h1 {
+    font-size: 20px;
+  }
+
+  .question-text {
+    font-size: 15px;
+  }
+
+  .submit-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .submit-note {
+    text-align: center;
+  }
+}
