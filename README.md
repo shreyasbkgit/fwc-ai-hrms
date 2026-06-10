@@ -1,5 +1,5 @@
 # FWC AI-HRMS
-Demo Link:https://drive.google.com/file/d/1kYstceYP6AZjAftoGHNVScuc6GyEgsAI/view?usp=sharing
+Demo Link: https://drive.google.com/file/d/1kYstceYP6AZjAftoGHNVScuc6GyEgsAI/view?usp=sharing
 An AI-powered Human Resource Management System built for the FWC IT Services hackathon. Automates resume screening, AI interview evaluation, attendance tracking, and role-based dashboards.
 
 ## Tech Stack
